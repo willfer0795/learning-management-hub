@@ -1,0 +1,29 @@
+.side-bar{
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    height: 100vh;
+    .side-bar-menu{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        .side-bar-menu-item{
+            margin-bottom: 0.625rem;
+            a{
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+                padding: 5px 10px;
+                img{
+                    width: 24px;
+                    height: 24px;
+                    margin-right: 10px;
+                }
+            }
+        }
+        .side-bar-menu-item:last-child{
+            margin-bottom: 0;
+        }
+    }
+}

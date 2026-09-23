@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { DashboardHomeComponent } from './pages/dashboard-home/dashboard-home.component';
+import { SessionsComponent } from './views/sessions/sessions.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
 export const routes: Routes = [
@@ -10,6 +11,10 @@ export const routes: Routes = [
       {
         path: '',
         component: DashboardHomeComponent,
+      },
+      {
+        path: 'sessions',
+        component: SessionsComponent,
       },
     ],
   },

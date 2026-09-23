@@ -1,3 +1,12 @@
-<p>
-  side-bar works!
-</p>
+<div class="side-bar">
+  <ul class="side-bar-menu">
+    @for (item of dataMenu; track item.route) {
+      <li  class="side-bar-menu-item">
+        <a [routerLink]="item.route">
+          <img [src]="'assets/images/' + item.icon" [alt]="item.title">
+          <span>{{item.title}}</span>
+        </a>
+      </li>
+    }
+  </ul>
+</div>

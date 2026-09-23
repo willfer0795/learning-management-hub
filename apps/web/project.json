@@ -19,13 +19,18 @@
           {
             "glob": "**/*",
             "input": "apps/web/public"
+          },
+          {
+            "glob": "**/*",
+            "input": "apps/web/src/assets",
+            "output": "assets"
           }
         ],
         "styles": ["apps/web/src/styles.scss"]
       },
       "configurations": {
         "production": {
-          "baseHref": "/ui/learning-management-hub/",
+          "baseHref": "/ui/front-learning-management-hub/",
           "budgets": [
             {
               "type": "initial",
